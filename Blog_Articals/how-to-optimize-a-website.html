@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.oakharborwebdesigns.com/blog/articles/how-to-optimize-a-website.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Jun 2024 15:36:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137702322-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137702322-2');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Google's new Core Vitals metrics are changing how sites get ranked based on and optimized mobile experience.  I will show you everything you need to know about how to satisfy these new metrics and get 95+ scores on speed and performance for hand made HTML and CSS websites.">
+    <meta name="keywords" content="how to increase website speed, how to optimze for googles core vitals, how to improve and websites core vitals, how to get a 100 on google page speed scores, increase website load times, how to optimize a website, how to get 100% on google lighthouse, improve google lighthouse scores, how to improve google lighthouse scores, how to improve websote load times">
+
+    <link href='../../../d33wubrfki0l68.cloudfront.net/css/1d79331508154533991d27b14717b839e6a9f271/css/core-styles.css' media='all' rel='stylesheet' type='text/css'/>
+    <link href='../../../d33wubrfki0l68.cloudfront.net/css/f4e68815a301400dab2b3ab5461907577a0a4f9a/css/dark.css' rel='stylesheet'/>
+    <link href='../../../d33wubrfki0l68.cloudfront.net/css/e74807aa3e9ba073debda1bf7e9b4da405a76bea/blog/blog-css/main.css' media='all' rel='stylesheet' type='text/css'/>
+
+    <link href='../../../d33wubrfki0l68.cloudfront.net/css/50be6cc15d883ff3fa5d0885fed47241695a986c/css/prism.css' rel='stylesheet'/>
+
+    <script src="../../../www.w3schools.com/lib/w3.js"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+    <link rel="manifest" href="../../site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="How to optimize a website's Core Vitals and Page Speed Score" />
+    <meta property="og:description" content="Google's new Core Vitals metrics are changing how sites get ranked based on and optimized mobile experience.  I will show you everything you need to know about how to satisfy these new metrics and get 95+ scores on speed and performance for hand made HTML and CSS websites." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.oakharborwebdesigns.com/blog/articles/how-to-build-a-responsive-mobile-first-website-from-scratch.html#blog-post" />
+
+    <!-- jQuery -->
+    <script defer src="../../../ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Code styling-->
+
+    <!--Adsense-->
+    <script data-ad-client="ca-pub-9902602223629429" async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+
+
+    <title>How to optimize a website's Core Vitals and Page Speed Score | Oak Harbor Web Designs</title>
+</head>
+
+<body>
+    <a class="skip" href="#main">skip to main content</a>
+
+    <header>
+        <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
+            <span aria-hidden="true" class="dark-toggle">
+                <span class="DTspan"></span>
+            </span>
+        </button>
+        <!-- Desktop Navbar -->
+        <div class="mobile-wrapper">
+            <div class="mobile-nav container mobile-nav-container">
+                <img id="mobile-logo" src="../../../d33wubrfki0l68.cloudfront.net/3745959f2d7eede91c7a6a8751368d2d234a7edd/b82b2/images/logo-light.png" alt="mobile_company_logo" height="60">
+                <div aria-hidden="true" class="neon">
+                    <span>A</span>
+                    <span>f</span>
+                    <span>t</span>
+                    <span>e</span>
+                    <span>r</span>
+
+                    <span>D</span>
+                    <span>a</span>
+                    <span>r</span>
+                    <span>k</span>
+                </div>
+                <!-- Hamburger Menu -->
+                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
+                    <span aria-hidden="true" class="hamburger-box">
+                        <span aria-hidden="true" class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!--                   NAVIGATION                 -->
+        <!-- ============================================ -->
+
+        <nav>
+            <div class="navbar-menu">
+                <div id="side-menu" class="side-nav">
+                    <img src="../../../d33wubrfki0l68.cloudfront.net/f525bebad8ec45967899542ab37f9756287e1bbf/b31d2/images/logo-light-desktop.png" alt="company logo" width="100px">
+                    <div aria-hidden="true" class="neon" id="desktop-neon">
+                        <span>A</span>
+                        <span>f</span>
+                        <span>t</span>
+                        <span>e</span>
+                        <span>r</span>
+
+                        <span>D</span>
+                        <span>a</span>
+                        <span>r</span>
+                        <span>k</span>
+                    </div>
+                    <ul id="on-top" class="navbar-links">
+                        <li class="nav-li"><a href='../../index-2.html'>Home</a></li>
+                        <li class="nav-li"><a href='../../html/about.html'>About</a></li>
+                        <li class="nav-li"><a href='../../html/services.html'>Services</a></li>
+                        <li class="nav-li"><a href='../../index-2.html#portfolio'>Portfolio</a></li>
+                        <li class="nav-li"><a class='active-menu' href='../recent-posts.html'>Blog</a></li>
+                        <li class="nav-li"><a href='../../html/contact.html'>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="header">
+        <p class="container">Blog / September, 2021</p>
+    </section>
+
+    <main id="main">
+
+
+        <section id="blog">
+
+            <!-- ============================================ -->
+            <!--                 BLOG CONTENT                 -->
+            <!-- ============================================ -->
+
+            <article class="blog">
+                <div class="blog__post container">
+                    <div class="blog__post--header">
+                        <div id="blog-post" aria-label="picture of a computer screen" class="main-image speed"></div>
+                        <h1>How to optimize a website's Core Vitals and Page Speed Score</h1>
+                        <div class="blog__post--info">
+                            <img aria-hidden="true" src="../../../d33wubrfki0l68.cloudfront.net/9b822e818a509da4921d1beca61e039b69db0955/48876/blog/images/ryan_postell_headshot.jpg" alt="Ryan Postell">
+                            <div class="blog__post--profile">
+                                <h3>Ryan Postell</h3>
+                                <a href="#">September 18, 2021</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-hidden="true" class="line"></div>
+                    <p>
+                        I recently took an interest in optimizing a website's page speed scores after Google announced their new <a href="https://web.dev/vitals/" target="_blank">Core Vitals</a> metrics and how it will be the leading ranking factor going forward.  It is basically favoring websites that have the fastest and best mobile experience. And that is what I am going to show you how to do right now. 
+                    </p>
+                    <p>
+                        You can watch me as I use all of these steps to optimize a real client of mines website, and I exaplain everything I do and why.  
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/XHVbqmyCSeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3 class="blog-h3">Asset Optimization</h3>
+                    <p>
+                        Generally a lot of it comes down to asset optimization like having images the same size as they are being displayed at. Like not having a 1000px wide image resized in css to be 300px wide on the screen. That’s a waste of space. Also losslessly compressing all your assets can save up to 80% of the file size.  I use <a href="https://compressor.io/" target="_blank">Compressor.io</a> to lossly compress all my images.  I pay for the pro subscription so I can upload 100 images to compress at a time.  I've been using it for years.  I highly reccomend them. 
+                    </p>
+                    <p>
+                        Also, background images. Why have a 2300px wide stock photo loading on a 400px wide phone screen? Resize that sucker to 500px wide and compress it. You go from 2.3MB to like 37k or less. HUGE reduction in size and load times. Then on tablet and desktop you just reset the background image to the larger 2300px image. I saw a website from someone who was loading multiple 4000px wide images as backgrounds and it was slow as all hell. It’s not enough to compress it. Because even if it compresses 70%, 70% of 4MB is still like 1.2MB which is huge for an image to load on mobile. Resize your images and load the smaller ones for mobile and the larger ones for tablet and desktop and compress them.
+                    </p>
+                    <p>
+                        Then theres picking the right sized images for the right screen size, ad that's what the attribute "srcset" does.  You can read about it <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images" target="_blank">here</a> from Mozilla Developer Network.  What it does is you provide a list of different sized images to load at the screen sizes you want them to load, and using "src" as your fallback image.  This way, if you have an image that's 700px wide in your html on desktop, you can load a verison of it that's 350px wide on screens under 480px or whatever you want and load a smaller file which in turn improves your laod time.
+                    </p>
+                    <p class="extra-margin">
+                        After you've done all that, make sure you add the proper height and width attributes to your images as Google wants to see those on every one of them.  It helps allocate space for the image before it loads and helps reduce content layout shifts.
+                    </p>
+                    <script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9902602223629429" data-ad-slot="8619475447"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
+                    <h3 class="blog-h3">Lazy Loading</h3>
+                    <p class="extra-margin">
+                        Then there’s lazy loading, using the <span class="bold">loading=“lazy”</span> attribute that is supported by most browsers. This used the browsers built in lazy loading without you having to do a lot of fancy JavaScript.  But don’t lazy load any images that are “above the fold” meaning the bottom of the screen when the website loads. If the image will load on the landing page section and in the viewport, don’t lazy load it. It will create content layout shifts. So whatever images are on the screen when your website first loads should not be lazy loaded.
+                    </p>
+                    <script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9902602223629429" data-ad-slot="8619475447"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <h3 class="blog-h3">Remove jQuery, Google Fonts, and all other nonessential CDN links</h3>
+                    <p class="extra-margin">
+                        There's a time and place for everything, and jQuery's time is 5 years ago and it's place in on the bench. Class toggling and all that can be handled within javascript now and there’s really no reason to be using JQuery anymore. It’s bloated and removing it can make your website more secure and load much faster. Remove it! Google's page speed score will label it as something you need to remove to improve your score, so we should all just get used to working without it unless its absolutely necessary.
+                    </p>
+                    <p>
+                        Then there's your Google Fonts CDN links. Instead of linking to them in your head, download your fonts from them if it’s not a standard font on browsers. I use the @font-face to load my fonts locally. I store all the downloaded files in a fonts folder snd then load them in on my core-styles.css sheet that is shared on all pages of the site. This way I can eliminate using the google fonts cdn which eliminates it as a render blocking resource.
+                    </p>
+                    <p>
+                        Just copy and paste this code in your CSS sheet that is shared on ALL your pages.  Replaces the file path with the file path of your font that you downloaded.  The <span class="bold">font-family</span> property in here is what YOU name it.  So it doesn't have to be "Lobster" like in the example code.  It can be called whatever I want it to be and thats what I sue when I declare it in CSS somewhere. 
+                    </p>
+                    <pre aria-hidden="true">
+                        <code class="language-css">
+                        
+                            @font-face {
+                                font-family:'Lobster';
+                                src: url('/fonts/Lobster-Regular.ttf') format('woff2');
+                                font-weight: normal;
+                                font-style: normal;
+                            }
+                        
+                        </code>
+                    </pre>
+                    <p>
+                        By downlaoding and loading your fonts locally you can eliminate the need for using the Google CDN, and load your fonts even faster while also removing a render blocking resource.  I highly recommend doing this for all your sites.
+                    </p>
+                    <h3 class="blog-h3">Defer your nonessential Javascript</h3>
+                    <p class="extra-margin">
+                        On all your script tags, add the <span class="bold">defer</span> attribute to the opening script tag and this will "defer" its loading until AFTER the website has loaded.  This way, the Javascript doesn't interrupt the website from loading it's HTML and CSS first and painting the page.  It waits its turn patiently until everyone else is finished.
+                    </p>
+                    <script async src="../../../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+                    <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-9902602223629429" data-ad-slot="8619475447"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    <h3 class="blog-h3">Use SVG's as often as you can over PNG's</h3>
+                    <p>
+                        Use as many svgs as you can over pngs. Svgs are much smaller and load much faster. I use <a href="https://www.flaticon.com/" target="_blank">Flaticon</a> to get all my svg graphics and icons and I can customize their colors and download the svg. Love it. This also replaces Fontawesome since that’s another cdn link you don’t need to be loading. Rather than using Fontawesome, just load in the icons you need as svgs. It’s much more lightweight than using Fontawesome.  
+                    </p>
+                    <p>
+                        If you can, hire someone off <a href="https://www.fiverr.com/" target="_blank">Fiverr</a> who is an SVG graphic illustrator to convert your clients logos to svgs and load those into the site instead. Much more optimized and scalable. You can replace a 36k png or more with a 2k svg. It's worth every penny.  You can find some affordable options for under $30 per graphic. A fantastic investment.
+                    </p>
+                    <p>
+                        It’s always a great idea to convert your clients logos into svg format and then give it to them to use for decals, business cards, and t-shirts.  They will love you for it. 
+                    </p>
+                    <h3 class="blog-h3">Google Lighthouse</h3>
+                    <p>
+                        When all is said and done check your Google Lighthouse scores in your dev tools inspector and satisfy those as well. Usually you just need to check off some accessibility stuff like adding aria-label attributes to links with no text in them or alt tags on images or contrast issues. Once you have a 96+ page speed score and nearly 100’s across the board on lighthouse, your website is now properly optimized and dressed to impress.
+                    </p>
+                    <p>
+                        These are the optimzation steps I take everytime I finish a website.  I wanted to detail this out for anyone looking for a detailed "prcoess" on what to do and how to do it wihtout all the jargon and over complicated lengthy descriptions.  I hope this helps!
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   SIDE BAR                   -->
+        <!-- ============================================ -->
+
+        <section id="side-bar" class="container">
+            <div w3-include-html="/blog/includes/sidebar.html">
+
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================ -->
+    <!--                    FOOTER                    -->
+    <!-- ============================================ -->
+
+    <footer>
+        <img aria-hidden="true" class="footer-img light-mode-svg" src="https://d33wubrfki0l68.cloudfront.net/c272e13f11fec5e8a82b6342bc194b3eb74b5b72/7cf10/images/footer-swoosh.svg" alt="">
+        <img aria-hidden="true" class="footer-img dark-mode-svg" src="https://d33wubrfki0l68.cloudfront.net/3b756ae30ef51ccd8564c2978ea8a5a70f1931f8/95db7/images/footer-swoosh-dark.svg" alt="">
+        <div class="container">
+            <div class="flex-group">
+                <div class="dark-mode-group">
+                    <div aria-hidden="true" class="light">
+                        <div class="wire"></div>
+                        <div class="triangle"></div>
+                        <div class="bulb"></div>
+                    </div>
+                    <!--SVG Light-->
+                    <button class="dark-mode-button" aria-label="dark mode toggle">
+                        <span aria-hidden="true" class="dark-toggle">
+                            <span class="DTspan"></span>
+                        </span>
+                    </button>
+                    <p>SWITCH TO DARK MODE</p>
+                </div>
+                <div class="footer-item image-box">
+                    <img class="footer-logo mobile-display" src="../../../d33wubrfki0l68.cloudfront.net/3745959f2d7eede91c7a6a8751368d2d234a7edd/b82b2/images/logo-light.png" alt="oak harbor web designs logo" height="50">
+                    <img class="footer-logo desktop-display" src="../../../d33wubrfki0l68.cloudfront.net/f525bebad8ec45967899542ab37f9756287e1bbf/b31d2/images/logo-light-desktop.png" alt="oak harbor web designs logo" height="50">
+                    <div aria-hidden="true" class="neon" id="footer-neon">
+                        <span>A</span>
+                        <span>f</span>
+                        <span>t</span>
+                        <span>e</span>
+                        <span>r</span>
+                        <span>D</span>
+                        <span>a</span>
+                        <span>r</span>
+                        <span>k</span>
+                    </div>
+                    <p>OHWDinfo@gmail.com</p>
+                    <a href="tel:219-576-2539">(219) 576-2539</a>
+                </div>
+                <div class="footer-item">
+                    <h2>Navigation</h2>
+                    <div aria-hidden="true" class="footer-line"></div>
+                    <a class='link' href='../../index-2.html'>Home</a>
+                    <a class='link' href='../../html/about.html'>About</a>
+                    <a class='link-long' href='../../html/services.html'>Services</a>
+                    <a class='link-long' href='../../index-2.html#portfolio'>Portfolio</a>
+                    <a class='link-long' href='../recent-posts.html'>Blog</a>
+                    <a class='link-long' href='../../html/contact.html'>Contact</a>
+                </div>
+                <div class="footer-item">
+                    <h2>Services</h2>
+                    <div aria-hidden="true" class="footer-line"></div>
+                    <p>Web Design</p>
+                    <p>Website Maintenance</p>
+                    <p>SEO Services</p>
+                    <p>Content Creation</p>
+                    <p>Logo Design</p>
+                </div>
+            </div>
+        </div>
+        <div class="branding">
+            <p>Copyright &copy; 2021 | Oak Harbor Web Designs | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <script src='../../../d33wubrfki0l68.cloudfront.net/js/33b9bd3d3ba8bbe19351c66aa3b2bd7a5d49f3da/prism.js'></script>
+    <script defer src='../../../d33wubrfki0l68.cloudfront.net/js/eef0025cd862cc3e03f8ff60b8943386d5df5d14/app.js'></script>
+
+    <script>
+        var ba = ["MSIE", "Trident", "Edge"];
+        var b, ua = navigator.userAgent;
+        for (var i = 0; i < ba.length; i++) {
+            if (ua.indexOf(ba[i]) > -1) {
+                b = ba[i];
+                break;
+            }
+        }
+        if (b == "MSIE" || b == "Trident" || b == "Edge") {
+            b = "Internet Explorer";
+            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
+        }
+    </script>
+
+</body>
+
+
+<!-- Mirrored from www.oakharborwebdesigns.com/blog/articles/how-to-optimize-a-website.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Jun 2024 15:36:45 GMT -->
+</html>
